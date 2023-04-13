@@ -8,7 +8,7 @@ The example does not require to install [ghostscript](https://www.ghostscript.co
 ## Command
 You can modify the command on `run.sh`
 ```
-docker run --rm -v $(pwd):/app \
+docker run --rm -v "$(pwd)":/app \
 -w /app minidocks/ghostscript \
 -sDEVICE=pdfwrite \
 -dCompatibilityLevel=1.4 \
