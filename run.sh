@@ -1,4 +1,4 @@
-docker run --rm -v $(pwd):/app \
+docker run --rm -v "$(pwd)":/app \
 -w /app minidocks/ghostscript \
 -sDEVICE=pdfwrite \
 -dCompatibilityLevel=1.4 \
